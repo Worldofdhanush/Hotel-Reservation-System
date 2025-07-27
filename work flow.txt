@@ -1,0 +1,66 @@
+hotel-reservation-ai/
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions CI/CD pipeline
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/hotel/
+│   │   │   │   ├── config/
+│   │   │   │   │   └── DatabaseConfig.java
+│   │   │   │   ├── controller/
+│   │   │   │   │   ├── BookingController.java
+│   │   │   │   │   └── AdminController.java
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── Booking.java
+│   │   │   │   │   └── Room.java
+│   │   │   │   ├── repository/
+│   │   │   │   │   └── BookingRepository.java
+│   │   │   │   ├── service/
+│   │   │   │   │   ├── AIService.java
+│   │   │   │   │   └── BookingService.java
+│   │   │   │   └── HotelApplication.java
+│   │   │   └── resources/
+│   │   │       ├── static/
+│   │   │       ├── templates/
+│   │   │       └── application.properties
+│   │   └── test/          # Unit tests
+│   └── pom.xml
+├── frontend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/hotel/ui/
+│   │   │   │   ├── controller/
+│   │   │   │   │   └── DashboardController.java
+│   │   │   │   └── MainApp.java
+│   │   │   ├── resources/
+│   │   │   │   ├── css/
+│   │   │   │   │   └── styles.css
+│   │   │   │   ├── fxml/
+│   │   │   │   │   ├── MainDashboard.fxml
+│   │   │   │   │   └── BookingForm.fxml
+│   │   │   │   └── images/
+│   │   │   │       └── logo.png
+│   └── pom.xml
+├── ai-models/
+│   ├── pricing_model.py
+│   ├── chatbot_api.py
+│   ├── requirements.txt
+│   └── Dockerfile
+├── database/
+│   ├── schema.sql
+│   └── sample_data.sql
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── SETUP.md
+│   └── screenshots/
+│       ├── dashboard.png
+│       └── booking_flow.png
+├── scripts/
+│   ├── init_db.sh
+│   └── start_services.sh
+├── .gitignore
+├── LICENSE
+├── README.md
+├── pom.xml               # Parent POM (if using multi-module)
+└── docker-compose.yml

@@ -1,0 +1,28 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# System
+.DS_Store
+Thumbs.db
